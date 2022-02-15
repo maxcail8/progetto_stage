@@ -1,0 +1,24 @@
+<!--
+Sample html funzionamento di AR.js
+=> Estensione delle potenzialità di A-Frame
+
+Questa pagina web mostra una delle primitive messe a disposizione per quando sullo schermo viene riconosciuto un marker Hiro
+-->
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script> <!--Inclusione libreria A-Frame-->
+        <script src=”https://cdn.jsdelivr.net/gh/jeromeetienne/AR.js@1.5.0/aframe/build/aframe-ar.js”></script> <!--Inclusione libreria AR.js-->
+        <!--<script src="js/aframe-ar.js"></script>-->
+    </head>
+    <body style="margin: 0px; overflow: hidden;">
+        <a-scene embedded arjs>
+            <!--All'interno di a-scene verranno contenuti tutti gli oggetti comporranno la scena 3D-->
+            <a-maker preset="hiro"> <!--Identifica un marker e l'attributo preset indica alla libreria di analizzare il flusso video per un preset di tipo Hiro -->
+                <!--All'interno di a-marker va inserito il codice dell'oggetto 3D che si vuole far apparire in sovrapposizoone al marker stesso-->
+                <a-box position="0 0.25 0" height=”.5″ material="color: red; transparent:true; opacity:0.75;"></a-box> <!--Parallelepipedo-->
+                <!--Documentazione A-Frame per vari oggetti: https://aframe.io/ -->
+            </a-maker>
+            <a-entity camera></a-entity> <!--Camera per visualizzazione oggetto 3D-->
+        </a-scene>
+    </body>
+</html>
