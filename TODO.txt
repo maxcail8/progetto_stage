@@ -1,29 +1,3 @@
-1)Marker personalizzati
--Finisci la sezione sui marker personalizzati della documentazione
--Prova a costruire un nuovo marker (come marker3, Max ma con lo sfondo bianco)
-
-2)Sezione Oggetti 3D personalizzati
--Fai altri test di creazione oggetti 3D con AR.js/A-Frame/three.js
--Inizia Unity (possibile controllo a Blender)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Maybe
 1)Sito https://ar-js-org.github.io/AR.js-Docs/
-Esempi di Image Tracking, Location Based e Marker Based (tutti esempi che possono essere scritti col codice della pagina 
+Esempi di Image Tracking, Location Based e Marker Based (tutti esempi che possono essere scritti col codice della pagina
