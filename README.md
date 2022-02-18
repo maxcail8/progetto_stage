@@ -1,3 +1,9 @@
-# Progetto stage
+# Internship project
 ## Demo AR
-> Realization of 3D models / 3D content (or 2D models / 2D content) with Unity, a multi-platform graphic engine which allows videogame and interactive content development. Subsequently, all this will be shown in Augmented Reality (AR) through a specially created web page. The languages used for the creation of the web page are HTML, CSS and Javascript (with a possible use of different frameworks, ex. Vue.js, Angular.js)
+> Realization of 3D models / 3D content (or 2D models / 2D content) which will subsequentently be shown in Augmented Reality (AR) through a dedicated web page. 
+Multiple tecnologies can be used for design and model 3D/2D content, such as Unity, AR.js, A-Frame, ecc...
+Instead, the web page will be created using HTML, CSS e Javascript (with a possible use of different frameworks, ex. Vue.js, Angular.js)
+In particular the path related to the internship project can be summarized in the following points:
+-Study different technology and their uses
+-Demo development -> Marker Based
+-Demo development -> Location Based (Optional)
