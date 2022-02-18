@@ -1,5 +1,0 @@
-Realtà amentata con AR.js
-https://devsware.wordpress.com/2018/07/25/realta-aumentata-con-ar-js/
-
-webgl
-https://caniuse.com/webgl

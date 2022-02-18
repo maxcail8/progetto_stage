@@ -1,0 +1,7 @@
+Color piker W3Cschool: https://www.w3schools.com/colors/colors_picker.asp
+Esempi tesi AR
+•	https://webthesis.biblio.polito.it/13182/1/tesi.pdf
+•	http://tesi.cab.unipd.it/57105/1/Elena_Rostellato_2017.pdf
+•	http://dspace.unive.it/bitstream/handle/10579/10683/842282-1210441.pdf?sequence=2
+•	…
+Exporter Unity - glTF: https://github.com/Plattar/gltf-exporter
