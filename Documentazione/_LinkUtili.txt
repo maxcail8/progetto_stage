@@ -5,3 +5,8 @@ Esempi tesi AR
 •	http://dspace.unive.it/bitstream/handle/10579/10683/842282-1210441.pdf?sequence=2
 •	…
 Exporter Unity - glTF: https://github.com/Plattar/gltf-exporter
+
+https://www.marxentlabs.com/gltf-files/
+https://stackoverflow.com/questions/47000523/a-frame-ar-js-marker-pattern-not-working
+https://forums.sketchup.com/t/gltf-import-and-export-webgl-paint3d/50128
+https://aframe.io/docs/0.8.0/introduction/models.html##sidebar

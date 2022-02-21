@@ -1,0 +1,31 @@
+{
+  "asset": {
+    "generator": "UnityGLTF (prefrontal cortex' fork)",
+    "version": "2.0"
+  },
+  "buffers": [
+    {
+      "uri": "Car.bin",
+      "byteLength": 0
+    }
+  ],
+  "nodes": [
+    {
+      "translation": [
+        4.13,
+        1.2,
+        0.354000032
+      ],
+      "name": "Car"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "nodes": [
+        0
+      ],
+      "name": "Car"
+    }
+  ]
+}
