@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>AR.js - glTF</title>
+    <!--<script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>-->
+    <script src="https://aframe.io/releases/0.7.1/aframe.min.js"></script>
+    <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+  </head>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a-scene embedded arjs>
+      <a-assets>
+        <a-asset-item id="car" src="glTF/Skeleton/Skeleton.gltf"></a-asset-item>
+      </a-assets>
+      <!--
+        <a-marker preset="custom" type="pattern" url="data/pattern-vegans.patt">
+        <a-entity gltf-model="#car"></a-entity>
+      </a-marker>
+      -->
+      <a-marker type="pattern" url="data/pattern-vegans.patt">
+        <a-entity gltf-model="#car" scale="2 2 2" position="0 0 0"></a-entity>
+      </a-marker>
+      <a-marker preset="hiro">
+        <a-entity>
+          <a-entity gltf-model="#car" scale="2 2 2" position="0 0 0"></a-entity>
+          <a-animation attribute="rotation" dur="10000" to="0 360 0" repeat="indefinite"></a-animation>
+        </a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
