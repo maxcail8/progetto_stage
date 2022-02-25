@@ -1,9 +1,13 @@
 # Internship project
-## Demo AR
-> Realization of 3D models / 3D content (or 2D models / 2D content) which will subsequentently be shown in Augmented Reality (AR) through a dedicated web page. 
-Multiple tecnologies can be used for design and model 3D/2D content, such as Unity, AR.js, A-Frame, ecc...
-Instead, the web page will be created using HTML, CSS e Javascript (with a possible use of different frameworks, ex. Vue.js, Angular.js)
-In particular the path related to the internship project can be summarized in the following points:
--Study different technology and their uses
--Demo development -> Marker Based
--Demo development -> Location Based (Optional)
+## Overview
+> The internship project consist in the management of three-dimensional (3D) or two-dimensional (2D) contents that will subsequentely be shown in augmented reality (AR) through the web.
+    - Design and modeling of 3D/2D contents through the use of Unity grapichs engine
+    - Management and import of models in glTF format for viewing them on the web
+    - Creation of web pages using HTML, CSS and Javascript languages (with the addiction of different frameworks and libraries)
+In particular, various technologies such as AR.js, A-Frame, three.js, ... are used for the interaction between digital created content and the web.
+The path related to the internship project can be summarized in the following points:
+    - Study of the various technologies and their uses
+    - Demo development with markers
+    - Demo development with geolocation (optional)
+
+## Instructions
