@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-
+<!--
+Coordinate google maps:
+45.547513330234935, 11.546680117417893
+---
+Works
+45.558548048112496, 11.54653882584099
+---
+45.547548048112496, 11.54653882584099
+45.5475461697156, 11.546514015408
+45.54754523051714, 11.546516697616969
+45.54760909597698, 11.546659525244719
+45.547620080523544, 11.546775180935546
+-->
 <html>
     <head>
-        <title>GeoAR.js Demo</title>
+        <title>GeoAR.js Sample</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-  </head>
+    </head>
 
-  <body style="margin: 0; overflow: hidden;">
-    <a-scene
-      vr-mode-ui="enabled: false"
-      embedded
-      arjs="sourceType: webcam; debugUIEnabled: false;"
-    >
-      <a-text
-        value="This content will always face you."
-        look-at="[gps-camera]"
-        scale="120 120 120"
-        gps-entity-place="latitude: <add-your-latitude>; longitude: <add-your-longitude>;"
-      ></a-text>
-      <a-camera gps-camera rotation-reader> </a-camera>
-    </a-scene>
-  </body>
+    <body style="margin: 0; overflow: hidden;">
+        <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+            <!--GPS-enity-place per il posizionamento rispetto alle coordinate-->
+            <a-text value="This content will always face you." look-at="[gps-camera]" scale="120 120 120" gps-entity-place="latitude: 45.561620080523544; longitude: 11.546775180935546;" rotation="0 0 90"></a-text>
+            <a-camera gps-camera rotation-reader></a-camera>
+        </a-scene>
+    </body>
 </html>
