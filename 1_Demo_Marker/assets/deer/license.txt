@@ -1,0 +1,11 @@
+Model Information:
+* title:	Giant Deer (NHMW-Geo 1876/0030/0003)
+* source:	https://sketchfab.com/3d-models/giant-deer-nhmw-geo-187600300003-7ef4a780764b4784ac0c928e90fcd18d
+* author:	Natural History Museum Vienna (https://sketchfab.com/NHMWien)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Giant Deer (NHMW-Geo 1876/0030/0003)" (https://sketchfab.com/3d-models/giant-deer-nhmw-geo-187600300003-7ef4a780764b4784ac0c928e90fcd18d) by Natural History Museum Vienna (https://sketchfab.com/NHMWien) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

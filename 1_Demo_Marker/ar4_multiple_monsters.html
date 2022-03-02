@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AR Multiple Monsters</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+        <script src="js/gesture-detector.js"></script>
+        <script src="js/gesture-handler.js"></script>
+        <script src="js/texture-loader.js" defer></script>
+    </head>
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
+            <a-assets>
+                <a-asset-item id="deer" src="assets/deer/scene.gltf"></a-asset-item>
+                <a-asset-item id="dragon" src="assets/dragon/scene.gltf"></a-asset-item>
+                <a-asset-item id="hellbound" src="assets/hellhound/scene.gltf"></a-asset-item>
+                <a-asset-item id="jotunn" src="assets/jotunn/scene.gltf"></a-asset-item>
+                <a-asset-item id="rat" src="assets/rat/scene.gltf"></a-asset-item>
+            </a-assets>
+            
+            <a-marker type="pattern" url="data/pattern-vegans.patt" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;" id="markerA">
+                <a-entity class="clickable" gesture-handler>
+                    <a-entity gltf-model="#deer" scale="0.5 0.5 0.5" position="1.2 0 0" deer></a-entity>
+                    <a-entity gltf-model="#dragon" scale="0.5 0.5 0.5" position="-1.2 0 0" dragon></a-entity>
+                    <a-entity gltf-model="#hellbound" scale="0.001 0.001 0.001" position="0 0 0" hellbound></a-entity>
+                    <a-entity gltf-model="#jotunn" scale="0.005 0.005 0.005" position="0 0 1.2" jotunn></a-entity>
+                    <a-entity gltf-model="#rat" scale="0.2 0.2 0.2" position="0 0 -1.2" manticore></a-entity>
+                </a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>

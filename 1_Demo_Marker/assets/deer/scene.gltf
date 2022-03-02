@@ -1,0 +1,343 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1250.93408203125,
+        1151.6011962890625,
+        2879.701171875
+      ],
+      "min": [
+        -963.8536376953125,
+        -1436.4305419921875,
+        -58.56174850463867
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 786384,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9999921321868896,
+        0.9999853372573853,
+        0.9999394416809082
+      ],
+      "min": [
+        -0.9999422430992126,
+        -0.9999975562095642,
+        -0.9999878406524658
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9971719980239868,
+        0.9993569850921631
+      ],
+      "min": [
+        0.0006430000066757202,
+        0.0005450000171549618
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 284157,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1572768,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        1437.213623046875,
+        1146.748291015625,
+        2879.701171875
+      ],
+      "min": [
+        -1150.6619873046875,
+        -1422.1756591796875,
+        -60.63792037963867
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2359152,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9999734163284302,
+        0.9999846816062927,
+        0.9998490810394287
+      ],
+      "min": [
+        -0.9999724626541138,
+        -0.9999964833259583,
+        -0.9999784231185913
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 524256,
+      "componentType": 5126,
+      "count": 65532,
+      "max": [
+        0.9938579797744751,
+        0.9993569850921631
+      ],
+      "min": [
+        0.0006430000066757202,
+        0.00266400002874434
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1136628,
+      "componentType": 5125,
+      "count": 340698,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3145536,
+      "componentType": 5126,
+      "count": 24999,
+      "max": [
+        1253.5517578125,
+        1151.6011962890625,
+        2814.429931640625
+      ],
+      "min": [
+        -1151.6304931640625,
+        -1426.19873046875,
+        1.7970529794692993
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3445524,
+      "componentType": 5126,
+      "count": 24999,
+      "max": [
+        0.9999827742576599,
+        0.9999815821647644,
+        0.9999892115592957
+      ],
+      "min": [
+        -0.9999727010726929,
+        -0.999995768070221,
+        -0.999896764755249
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 1048512,
+      "componentType": 5126,
+      "count": 24999,
+      "max": [
+        0.9764710068702698,
+        0.9402260184288025
+      ],
+      "min": [
+        0.0006430000066757202,
+        0.006238000001758337
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2499420,
+      "componentType": 5125,
+      "count": 125145,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Natural History Museum Vienna (https://sketchfab.com/NHMWien)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/giant-deer-nhmw-geo-187600300003-7ef4a780764b4784ac0c928e90fcd18d",
+      "title": "Giant Deer (NHMW-Geo 1876/0030/0003)"
+    },
+    "generator": "Sketchfab-11.40.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3000000,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1248504,
+      "byteOffset": 3000000,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3745512,
+      "byteOffset": 4248504,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 7994016,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/material_0_baseColor.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "material_0",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.52285905918157
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Object_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Object_2",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 9,
+            "POSITION": 8,
+            "TEXCOORD_0": 10
+          },
+          "indices": 11,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        0.0010449783876538277,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.320318132417904e-19,
+        -0.0010449783876538277,
+        0.0,
+        0.0,
+        0.0010449783876538277,
+        2.320318132417904e-19,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2,
+        3,
+        4
+      ],
+      "name": "NHMW-Geo-1876-0030-0003_Megaloceros-giganteus_050321_AH-NB-VW_EDIT_lowRes.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": "Object_2"
+    },
+    {
+      "mesh": 1,
+      "name": "Object_3"
+    },
+    {
+      "mesh": 2,
+      "name": "Object_4"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}

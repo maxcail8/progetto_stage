@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AR Vehicles presentation</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+        <script src="js/gesture-detector.js"></script>
+        <script src="js/gesture-handler.js"></script>
+        <script src="js/texture-loader.js" defer></script>
+    </head>
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene arjs embedded renderer="logarithmicDepthBuffer: true;" vr-mode-ui="enabled: false" gesture-detector id="scene">
+            <a-assets>
+                <a-asset-item id="tugboat" src="assets/tugboat/scene.gltf"></a-asset-item>
+                <a-asset-item id="locomotive" src="assets/locomotive/scene.gltf"></a-asset-item>
+                <a-asset-item id="hind" src="assets/hind/scene.gltf"></a-asset-item>
+                <a-asset-item id="jeep" src="assets/jeep/scene.gltf"></a-asset-item>
+                <a-asset-item id="truck" src="assets/truck/scene.gltf"></a-asset-item>
+            </a-assets>
+
+            <a-marker preset="hiro" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+                <a-entity gltf-model="#tugboat" scale="0.07 0.07 0.07" position="0 0 0" tugboard class="clickable" gesture-handler></a-entity>
+            </a-marker>
+
+            <a-marker preset="kanji" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+                <a-entity gltf-model="#truck" scale="0.05 0.05 0.05" position="0 0 0" truck class="clickable" gesture-handler></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="data/letterA.patt" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+                <a-entity gltf-model="#locomotive" scale="0.18 0.18 0.18" position="0 0 0" locomotive class="clickable" gesture-handler></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="data/letterB.patt" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+                <a-entity gltf-model="#jeep" scale="0.4 0.4 0.4" position="0 0 0" jeep class="clickable" gesture-handler></a-entity>
+            </a-marker>
+
+            <a-marker type="pattern" url="data/letterC.patt" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;">
+                <a-entity gltf-model="#hind" scale="0.12 0.12 0.12" position="0 0 0" hind class="clickable" gesture-handler></a-entity>
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+    </body>
+</html>
