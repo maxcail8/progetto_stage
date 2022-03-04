@@ -32,8 +32,8 @@ Coordinate google maps:
                 {
                     name: 'Magnemite',
                     location: {
-                        lat: 45.561620,
-                        lng: 11.546775,
+                        lat: 45.547513330234935,
+                        lng: 11.556680117417893,
                     }
                 },
             ];
@@ -48,10 +48,10 @@ Coordinate google maps:
 
                 let model = document.createElement('a-entity');
                 model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-                model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
-                model.setAttribute('rotation', '0 180 0');
+                model.setAttribute('gltf-model', 'glTF/0_magnemite/scene.gltf');
+                model.setAttribute('rotation', '180 270 180');
                 model.setAttribute('animation-mixer', '');
-                model.setAttribute('scale', '0.5 0.5 0.5');
+                model.setAttribute('scale', '10 10 10');
 
                 model.addEventListener('loaded', () => {
                     window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
