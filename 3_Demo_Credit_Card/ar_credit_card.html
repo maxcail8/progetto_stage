@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AR Credit Card</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src='https://aframe.io/releases/0.9.2/aframe.min.js'></script>
+        <script src="https://raw.githack.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+        <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
+
+        <script>
+            THREEx.ArToolkitContext.baseURL = 'https://raw.githack.com/jeromeetienne/ar.js/master/three.js/'
+        </script>
+        <style>
+            .centered {
+                height: 20%;
+                justify-content: center;
+                position: fixed;
+                bottom: 0%;
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                margin: 0px auto;
+                left: 0;
+                right: 0;
+            }
+
+            button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid white;
+                background-color: transparent;
+                width: 2em;
+                height: 2em;
+                border-radius: 100%;
+                font-size: 2em;
+                background-color: rgba(0, 0, 0, 0.4);
+                color: white;
+                outline: none;
+            }
+        </style>
+    </head>
+    <body style='margin : 0px; overflow: hidden;'>
+        <a-scene vr-mode-ui='enabled: false' embedded arjs='sourceType: webcam; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'>
+            <a-marker preset="hiro">
+                
+            </a-marker>
+            <a-entity camera></a-entity>
+        </a-scene>
+        <div class="centered">
+            <button data-action="change"></button>
+        </div>
+
+        <script>
+            var infoIndex = 0;
+
+            function renderInfo(){
+                let scene = document.querySelector('a-marker');
+                
+                infoIndex = infoIndex > 2 ? 0 : infoIndex;
+                console.log("info: " + infoIndex);
+                if(infoIndex == 0){
+                    scene.innerHTML = '<a-entity text="value: Total balance; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.8 0 -0.7" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity text="value: $17561.43; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="2.8 0 -0.5" scale="4 4 4" rotation="-90 0 0"></a-entity><a-entity text="value: This month; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.8 0 0" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity><a-entity text="value: Income; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.8 0 0.2" scale="1.5 1.5 1.5" rotation="-90 0 0"></a-entity><a-triangle color="green" position="1 0 0.2" scale="0.07 0.07 0.07" rotation="-90 0 0"></a-triangle><a-entity text="value: +$652.45; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.95 0 0.4" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity><a-entity><a-entity text="value: Outcome; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="2.4 0 0.2" scale="1.5 1.5 1.5" rotation="-90 0 0"></a-entity><a-triangle color="red" position="1.6 0 0.2" scale="0.07 0.07 0.07" rotation="-90 180 0"></a-triangle><a-entity text="value: -$250.29; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="2.55 0 0.4" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity>';
+                }
+                else if(infoIndex == 1){
+                    scene.innerHTML = '<a-entity text="value: ↑↓ Transactions; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="2.8 0 -0.7" scale="4 4 4" rotation="-90 0 0"></a-entity><a-entity><a-entity text="value: 08/03 Ginger Fresh; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.9 0 -0.3" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity text="value: -$142.50; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt; color: red;" position="2.8 0 -0.3" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity><a-entity><a-entity text="value: 08/03 Hot Shrimp; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.9 0 -0.2" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity text="value: -$51.10; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt; color: red;" position="2.8 0 -0.2" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity><a-entity><a-entity text="value: 07/03 Job LLC; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.9 0 0" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity text="value: +$6200; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt; color: green;" position="2.8 0 0" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity><a-entity><a-entity text="value: 07/03 BMC Shop; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.9 0 0.1" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity text="value: -$442.50; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt; color: red;" position="2.8 0 0.1" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity><a-entity><a-entity text="value: 07/03 Petroleum; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.9 0 0.2" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity text="value: -$61.23; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt; color: red;" position="2.8 0 0.2" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity><a-entity><a-entity text="value: 06/03 Transfer; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.9 0 0.4" scale="2 2 2" rotation="-90 0 0"></a-entity><a-entity text="value: +$125.63; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt; color: green;" position="2.8 0 0.4" scale="2 2 2" rotation="-90 0 0"></a-entity></a-entity><a-entity text="value: ...; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1.9 0 0.5" scale="2 2 2" rotation="-90 0 0"></a-entity>';
+                }
+                else{
+                    scene.innerHTML = '<a-plane color="black" height="2.5" width="3" position="0 0 -1.9" rotation="-90 0 0"></a-plane><a-entity text="value: Expense categories; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1 0.1 -1" scale="3 3 3" rotation="-90 0 0"></a-entity><a-entity><a-entity text="value: Rent; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="-1 0.1 -2.4" scale="2 2 2" rotation="-90 0 90"></a-entity><a-entity geometry="primitive: box; width: 0.4; height: 0.8; depth: 0.4;" material="color: red; opacity: 0.7" position="-1 0.4 -2.4"></a-entity></a-entity><a-entity><a-entity text="value: Grocceries; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="-0.5 0.1 -2.4" scale="2 2 2" rotation="-90 0 90"></a-entity><a-entity geometry="primitive: box; width: 0.4; height: 0.4; depth: 0.4;" material="color: orange; opacity: 0.7" position="-0.5 0.2 -2.4"></a-entity></a-entity><a-entity><a-entity text="value: Eating out; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="0 0.1 -2.4" scale="2 2 2" rotation="-90 0 90"></a-entity><a-entity geometry="primitive: box; width: 0.4; height: 0.2; depth: 0.4;" material="color: green; opacity: 0.7" position="0 0.1 -2.4"></a-entity></a-entity><a-entity><a-entity text="value: Sport; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="0.5 0.1 -2.4" scale="2 2 2" rotation="-90 0 90"></a-entity><a-entity geometry="primitive: box; width: 0.4; height: 0.7; depth: 0.4;" material="color: blue; opacity: 0.7" position="0.5 0.4 -2.4"></a-entity></a-entity><a-entity><a-entity text="value: Car; font: https://cdn.aframe.io/fonts/Exo2SemiBold.fnt;" position="1 0.1 -2.4" scale="2 2 2" rotation="-90 0 90"></a-entity><a-entity geometry="primitive: box; width: 0.4; height: 0.3; depth: 0.4;" material="color: purple; opacity: 0.7" position="1 0.2 -2.4"></a-entity></a-entity>';
+                }
+                infoIndex++;
+            }
+
+            window.onload = () => {
+                const button = document.querySelector('button');
+                button.innerText = '->';
+                
+                button.addEventListener('click', function() {
+                    renderInfo()
+                });
+                renderInfo();
+            };
+        </script>
+    </body>
+</html>
