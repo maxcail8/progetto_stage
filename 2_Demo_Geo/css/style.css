@@ -1,0 +1,62 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    /*background: #000000b6;*/
+    /*background: #000000c0;*/
+    background: #d9d9d9d9;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+header{
+    padding: 10px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18pt;
+}
+
+header *{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header h1{ /*Titolo*/
+    width: 90%;
+    margin: 0 auto;
+    color: ivory;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+section{
+    overflow: auto;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+section *{
+    margin: 0 auto;
+}
+
+section div{
+    float: left; 
+    box-sizing: border-box;
+    width: 15%;
+}
+
+section div img{
+    width: 80%;
+    border: 2px solid ivory;
+    box-shadow: 10px 10px 7px black;
+}
+
+section span{
+    float: left; 
+    box-sizing: border-box;
+    margin-left: 2%;
+    width: 50%;
+}
